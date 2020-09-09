@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Média"
+        android:textColor="#001691"
+        android:textSize="30sp"
+        android:id="@+id/titulo"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe sua primeira nota"
+        android:textSize="25sp"
+        android:id="@+id/nota_1"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+     />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe sua segunda nota"
+        android:textSize="25sp"
+        android:id="@+id/nota_2"
+        app:layout_constraintTop_toBottomOf="@id/nota_1"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+     />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clique aqui"
+        android:textSize="15sp"
+        android:id="@+id/botao"
+        app:layout_constraintTop_toBottomOf="@id/nota_2"
+        android:layout_marginTop="20dp"
+        android:onClick="cliqueBotao"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:id="@+id/resultado"
+        app:layout_constraintTop_toBottomOf="@id/botao"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
